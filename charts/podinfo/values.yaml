@@ -46,11 +46,7 @@ ingress:
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: "podinfo.arsy.pw"
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
+  hosts: []
 #    - host: chart-example.local
 #      paths:
 #        - path: /
