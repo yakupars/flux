@@ -20,6 +20,6 @@ spec:
       type: ClusterIP
     ingress:
       enabled: true
-      path: /
       hosts:
         - podinfo.arsy.pw
+          paths: ["/"]
