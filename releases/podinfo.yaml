@@ -21,6 +21,6 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - host: podinfo.arsy.pw
+        - host: "podinfo.arsy.pw"
           paths:
             - path: /
