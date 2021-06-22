@@ -1,0 +1,17 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: ingress-nginx
+  namespace: ingress-nginx
+  annotations:
+    fluxcd.io/ignore: "false"
+spec:
+  releaseName: ingress-nginx
+  chart:
+    repository: https://helm.nginx.com/stable/
+    name: nginx-ingress
+    version: 0.9.2
+  values:
+    controller:
+      service:
+        type: LoadBalancer
