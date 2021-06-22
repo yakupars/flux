@@ -50,6 +50,7 @@ ingress:
     - host: podinfo.arsy.pw
       paths:
         - path: /
+          pathType: ImplementationSpecific
 #    - host: chart-example.local
 #      paths:
 #        - path: /
