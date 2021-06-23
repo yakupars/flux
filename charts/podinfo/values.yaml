@@ -37,8 +37,14 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
+  enabled: true
   type: ClusterIP
-  port: 80
+  metricsPort: 9797
+  httpPort: 9898
+  externalPort: 9898
+  grpcPort: 9999
+  grpcService: podinfo
+  nodePort: 31198
 
 ingress:
   enabled: false
